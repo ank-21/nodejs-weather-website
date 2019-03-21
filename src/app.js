@@ -8,6 +8,7 @@ const geocode = require('./utilis/geocode')
 
 const app = express()                  //call it to generate new instance of application
 
+const port = process.env.PORT || 3000
 
 //define paths for express config
 const publicDirectoryPath = path.join(__dirname,'../public')
@@ -138,6 +139,6 @@ app.get('*',(req,res)=> {
 //     res.send('My 404 page')
 // })
 
-app.listen(3000, () => {
-    console.log('On the server 3000')
+app.listen(port, () => {
+    console.log('Server is up on port : '+ port)
 })
