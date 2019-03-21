@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+        <link rel="icon" href="/img/download.png">
+        <title>Help</title>
+        <link rel = "stylesheet" href="./css/styles.css">
+</head>
+    <body>
+        <div class="wrapper">
+            {{>header}}
+            {{title}}
+            <br>
+            <p style="font-weight:bold; color:red;">What do you have problem?</p>
+            <form id="helpForm">
+                <textarea placeholder="write here!" rows="8" cols="40" id="text"></textarea>
+                <button>Submit</button>
+                <p id="msg3"></p>
+            </form>
+        </div>
+
+        
+        {{>footer}}
+        <script src = "./js/help.js"></script>
+    </body>
+
+</html>

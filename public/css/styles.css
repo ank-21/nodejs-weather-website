@@ -1,0 +1,66 @@
+body{
+    color: #333333;
+    font-family: arial;
+    width:1000px;
+    margin:0 auto;
+    padding: 0 16px;
+    background-image: url("/img/jad-limcaco-1305456-unsplash.jpg");
+
+
+    display:flex; 
+    flex-direction:column;
+    min-height: 100vh;
+}
+.wrapper{
+    flex-grow: 1;
+}
+
+footer{
+    color: #888888;
+    font-family: 'Indie Flower', cursive;
+    border-top: 1px solid #A49C99;
+    margin-top: 16px;
+    padding: 16px 0;
+    font-size: 20px;
+}
+
+header{
+    margin-top:16px;
+    margin-bottom: 40px;
+}
+
+h1{
+    font-size:60px;
+    margin-bottom: 36px;
+}
+
+header a{
+    color:#888888;
+    text-decoration: none;
+    margin-right: 16px;
+}
+
+header a:hover{
+    color: #1167A8;
+}
+
+.aboutImg{
+    width:240px;
+}
+
+locationInput{
+    border: 1px solid #cccccc;
+    padding:8px;
+    margin: 4px;
+}
+button{
+    cursor: pointer;
+    border: 1px solid #888888;
+    padding: 8px;
+    background: #888888;
+    color:white;
+}
+#text{
+    position: relative;
+    top: 20px;
+}
