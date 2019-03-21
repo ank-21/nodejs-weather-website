@@ -12,7 +12,7 @@ const forecast = (latitude,longitude,callback) =>{
         }else if(response.body.error){
             callback('Unable to find location',undefined)
         }else{
-            callback(undefined,response.body.daily.data[0].summary + 'It is currently '+ ((response.body.currently.temperature-32)*0.56).toPrecision(4) + ' degree celsius out.There is '+ response.body.currently.precipProbability+'% chance of rain.')
+            callback(undefined,response.body.daily.data[0].summary +' The highest temperature of today was ' + ((response.body.daily.data[0].temperatureHigh-32)*0.56).toPrecision(4) + ' degree celsius and the lowest was ' + ((response.body.daily.data[0].temperatureLow-32)*0.56).toPrecision(4) + ' degree celsius. It is currently '+ ((response.body.currently.temperature-32)*0.56).toPrecision(4) + ' degree celsius . There is '+ response.body.currently.precipProbability+'% chance of rain. Currently there is '+ (response.body.currently.humidity*100).toPrecision(2) +'% humidity and the current wind speed is '+ response.body.currently.windSpeed + 'km/hr which was '+response.body.hourly.data[0].windSpeed+ 'km/hr an hour ago.')
         }
     })
 }
